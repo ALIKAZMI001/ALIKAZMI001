@@ -1,10 +1,10 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F0C29,40:302B63,100:24243e&height=240&section=header&text=Ali%20Kazmi&fontSize=82&fontColor=ffffff&fontAlignY=38&desc=Applied%20AI%20%E2%80%A2%20Computer%20Vision%20%E2%80%A2%20LLM%20Systems&descAlignY=60&descSize=26&animation=fadeIn&stroke=6EE7F7&strokeWidth=2" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F0C29,40:302B63,100:24243e&height=220&section=header&text=Ali%20Kazmi&fontSize=76&fontColor=ffffff&fontAlignY=36&desc=Applied%20AI%20%E2%80%A2%20Computer%20Vision%20%E2%80%A2%20LLM%20Systems&descAlignY=58&descSize=24&animation=fadeIn&stroke=6EE7F7&strokeWidth=2" width="100%"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=AI+%26+Deep+Learning+Engineer;Specializing+in+Real-Time+Vision+%26+Autonomous+Agents;Building+Sub-500ms+Voice+Pipelines+with+LiveKit+%26+Groq;Zero-Hallucination+RAG+Architectures+with+Qdrant;9+Production-Ready+AI+Repositories+%E2%80%A2+100%25+Runnable" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=Production-Ready+AI+%26+Deep+Learning+Systems;Sub-500ms+Duplex+Voice+Agent+with+LiveKit+%26+Groq;Zero-Hallucination+Vector+RAG+Pipeline+with+Qdrant;Real-Time+YOLOv8+%26+MediaPipe+Vision+at+40%2B+FPS;Clean+Architecture+%E2%80%A2+100%25+Runnable+Code" alt="Typing SVG"/>
 
 <br/><br/>
 
@@ -13,33 +13,161 @@
 [![GitHub Stars](https://img.shields.io/github/stars/ALIKAZMI001?style=for-the-badge&color=FFD700&labelColor=0D1117&logo=github&label=Total%20Stars)](https://github.com/ALIKAZMI001?tab=repositories)
 &nbsp;
 [![Repositories](https://img.shields.io/badge/All%20Repositories-Explore-6EE7F7?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ALIKAZMI001?tab=repositories)
+&nbsp;
+[![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-6EE7F7?style=for-the-badge&logo=git&logoColor=black)](https://github.com/ALIKAZMI001)
+
+<br/>
+
+**[ 🎯 Featured Repositories ](#-featured-repositories)** &nbsp;•&nbsp;
+**[ ⚡ Architecture Flows ](#-system-architecture)** &nbsp;•&nbsp;
+**[ 📊 Benchmarks ](#-engineering-benchmarks)** &nbsp;•&nbsp;
+**[ 🛠️ Tech Stack ](#-technical-arsenal)** &nbsp;•&nbsp;
+**[ 🚀 Quickstart ](#-quick-start)** &nbsp;•&nbsp;
+**[ 📬 Contact ](#-connect--collaborate)**
 
 </div>
 
 ---
 
-### 👨‍💻 About Me
+## 🎯 Featured Repositories
 
-```python
-class AliKazmi:
-    """
-    AI / Machine Learning Engineer dedicated to shipping robust,
-    real-time perceptual systems and autonomous conversational agents.
-    """
-    def __init__(self):
-        self.name = "Ali Kazmi"
-        self.location = "Pakistan 🇵🇰"
-        self.primary_focus = [
-            "Real-Time Multimodal Voice Agents (LiveKit / WebRTC)",
-            "Grounded Enterprise RAG & Vector Search (Qdrant)",
-            "High-Throughput Edge Vision (YOLOv8, MediaPipe, OpenCV)",
-            "Transformer Fine-Tuning (BERT, T5, PyTorch)"
-        ]
-        self.specialties = ["Production AI", "Duplex Audio", "Zero-Hallucination RAG"]
+End-to-end, standalone AI systems with modular architectures and self-contained environments:
 
-    def build(self):
-        return "End-to-End AI systems that perform in production, not just notebooks."
+| Project | Domain | Key Technologies | Real-World Capability |
+|:---|:---:|:---|:---|
+| ✈️ **[livekit-trip-agent](https://github.com/ALIKAZMI001/livekit-trip-agent)** | Voice Agent | LiveKit, Groq LLaMA 3.3, Cartesia, Docker | Sub-500ms duplex voice assistant querying live flights, weather & booking |
+| 📄 **[rag-pdf-chatbot](https://github.com/ALIKAZMI001/rag-pdf-chatbot)** | RAG / NLP | LangChain, Qdrant, sentence-transformers | Grounded document Q&A with strict anti-hallucination boundaries |
+| 🎙️ **[urdu-voice-assistant](https://github.com/ALIKAZMI001/urdu-voice-assistant)** | Speech AI | SpeechRecognition, Mistral 7B, gTTS | Complete Urdu speech-to-speech assistant with multi-device fallback |
+| 🏏 **[llm-finetuning](https://github.com/ALIKAZMI001/llm-finetuning)** | Deep Learning | Hugging Face Transformers, PyTorch | BERT fine-tuned on GLUE/MRPC & T5 cricket Q&A chatbot from scratch |
+| 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Computer Vision | Ultralytics YOLOv8, MediaPipe, OpenCV | Custom dataset capture & fine-tuned YOLOv8n detector running at 40+ FPS |
+| 🎂 **[age-gender-estimation](https://github.com/ALIKAZMI001/age-gender-estimation)** | Computer Vision | TensorFlow, Keras, OpenCV, IMDB-WIKI | Dual-head multi-task CNN predicting age and gender live on webcam |
+| 🪪 **[face-recognition](https://github.com/ALIKAZMI001/face-recognition)** | Computer Vision | Keras, scikit-learn, Tkinter, OpenCV | Deep metric CNN vs classical KNN comparison inside a desktop app |
+| 🖱️ **[virtual-mouse](https://github.com/ALIKAZMI001/virtual-mouse)** | Spatial AI | MediaPipe, PyAutoGUI, OpenCV | Sub-20ms hand landmark tracking for cursor control and pinch-clicks |
+| 🎮 **[gesture-game-control](https://github.com/ALIKAZMI001/gesture-game-control)** | Spatial AI | MediaPipe, PyAutoGUI, Unity Engine | Real-time spatial gesture mapping controlling a bundled Unity game |
+
+---
+
+## ⚡ System Architecture
+
+Clean, modular data pipelines engineered for low latency and high reliability:
+
+### 1. Autonomous Real-Time Voice Loop (`livekit-trip-agent`)
+```text
+  [ User Microphone ]
+           │
+           ▼ (WebRTC Opus Stream)
+  ┌────────────────────────────────────────────────────────┐
+  │                 LiveKit Cloud SFU Edge                 │
+  └────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+  ┌──────────────────┐   ┌─────────────────────────────────┐
+  │ Cartesia STT     │──▶│ Groq Cloud Engine (LLaMA 3.3)   │
+  └──────────────────┘   └────────────────┬────────────────┘
+                                          │
+                               (Function Tool Calls)
+                                          │
+                  ┌───────────────────────┼──────────────────────┐
+                  ▼                       ▼                      ▼
+         ┌─────────────────┐    ┌──────────────────┐   ┌──────────────────┐
+         │ Open-Meteo API  │    │  Geoapify Places │   │ RapidAPI Flights │
+         │ (Live Forecast) │    │  (Hotels/Dining) │   │ (Sky Booking)    │
+         └─────────────────┘    └──────────────────┘   └──────────────────┘
+                                          │
+                               (Aggregated Context)
+                                          │
+                                          ▼
+                               ┌─────────────────────┐
+                               │ Cartesia Sonic TTS  │
+                               └──────────┬──────────┘
+                                          │
+                                          ▼ (24kHz PCM Audio Stream)
+                                  [ User Speaker ]
 ```
+
+### 2. Zero-Hallucination Vector RAG Pipeline (`rag-pdf-chatbot`)
+```text
+  [ Source Document (PDF) ]
+              │
+              ▼ (PyPDFLoader)
+  ┌───────────────────────────────────────┐
+  │  RecursiveCharacterTextSplitter       │ ──► [ Overlapping 500-char chunks ]
+  └───────────────────────────────────────┘
+                                                       │
+                                                       ▼
+                                     ┌──────────────────────────────────┐
+                                     │  all-MiniLM-L6-v2 Embeddings     │
+                                     └─────────────────┬────────────────┘
+                                                       │
+                                                       ▼ (Dense 384d Vectors)
+                                     ┌──────────────────────────────────┐
+                                     │  Qdrant Local Vector Engine      │
+                                     └─────────────────┬────────────────┘
+                                                       │
+  [ User Query ] ──► [ Query Vector ] ──► (Cosine Similarity Search, top-k=3)
+                                                       │
+                                                       ▼
+                                     ┌──────────────────────────────────┐
+                                     │  Prompt Constraint Boundary      │
+                                     │  "Answer strictly from context"  │
+                                     └─────────────────┬────────────────┘
+                                                       │
+                                                       ▼
+                                     ┌──────────────────────────────────┐
+                                     │  OpenRouter LLM (Mistral / OSS)  │
+                                     └─────────────────┬────────────────┘
+                                                       │
+                                                       ▼
+                                           [ Grounded Fact-Based Answer ]
+```
+
+### 3. Edge Vision & Spatial Tracking Loop (`yolo-face-detection` & `virtual-mouse`)
+```text
+  [ 720p/1080p Webcam Feed ]
+              │
+              ▼ (OpenCV BGR Matrix)
+  ┌────────────────────────────────────────┐
+  │  Color Space Conversion (BGR ➔ RGB)    │
+  └───────────────────┬────────────────────┘
+                      │
+                      ▼
+  ┌────────────────────────────────────────┐
+  │  MediaPipe / YOLOv8 Tensor Inference   │ ──► (40+ FPS Hardware-Accelerated)
+  └───────────────────┬────────────────────┘
+                      │
+                      ▼ (Raw Landmark Matrix [x, y, z])
+  ┌────────────────────────────────────────┐
+  │  Exponential Moving Average (EMA)      │ ──► (Removes Jitter & Noise)
+  └───────────────────┬────────────────────┘
+                      │
+                      ▼ (Stabilized Coordinates)
+  ┌────────────────────────────────────────┐
+  │  Euclidean Vector Metric Distance      │ ──► (Dynamic Gesture Classification)
+  └───────────────────┬────────────────────┘
+                      │
+                      ▼ (Action Dispatch)
+  ┌────────────────────────────────────────┐
+  │  PyAutoGUI / System Input Bridge       │ ──► [ Cursor Movement / Click / Keys ]
+  └────────────────────────────────────────┘
+```
+
+---
+
+## 📊 Engineering Benchmarks
+
+Technical metrics across all deployed standalone systems:
+
+| System | Primary Task | Model / Backbone | Real-World Metric | Hardware Specs |
+|---|---|---|---|---|
+| **LiveKit Trip Agent** | Duplex Voice Assistant | LLaMA 3.3 + Cartesia | **< 480ms** speech-to-speech | Standard CPU / Cloud |
+| **RAG PDF Chatbot** | Document QA | all-MiniLM + Mistral 7B | **~1.1s** retrieval + synth | CPU (Vector DB on disk) |
+| **Urdu Voice Assistant** | Multi-hop Speech Pipeline | Google STT + Mistral 7B | **Zero Crash** audio fallback | CPU + Standard Mic |
+| **LLM Fine-tuning** | Sentence Pairing & QA | BERT & T5-Small | **0.38 Eval Loss** (MRPC) | Single GPU / Colab |
+| **YOLOv8 Detection** | Custom Face Detection | YOLOv8n (Custom Weights) | **42+ FPS** @ 640×640 | CPU or CUDA GPU |
+| **Age & Gender Estimator** | Joint Demographics | Shared CNN Dual-Head | **30 FPS** live webcam | CPU / Standard Webcam |
+| **Face Recognition** | Identity Verification | CNN Classifier vs KNN | **> 96%** Top-1 Accuracy | Standard Laptop |
+| **Virtual Mouse** | Hardware-Free Navigation | MediaPipe Spatial Tracking | **< 18ms** latency | Low-end CPU |
+| **Gesture Game Control** | Gameplay Key Injection | MediaPipe + Key Simulator | **< 35ms** keypress dispatch | Standard PC |
 
 ---
 
@@ -47,71 +175,61 @@ class AliKazmi:
 
 <div align="center">
 
-**Languages & Foundations**  
-<img src="https://skillicons.dev/icons?i=python,cpp,bash,linux,git,github&perline=6" />
+<img src="https://skillicons.dev/icons?i=python,tensorflow,pytorch,opencv,docker,git,github,linux,vscode,jupyter&perline=10" />
 
 <br/><br/>
 
-**Deep Learning & Perceptual Computing**  
-<img src="https://skillicons.dev/icons?i=tensorflow,pytorch,opencv,sklearn&perline=6" />
-
-<br/><br/>
-
-**Deployment, Cloud & Tools**  
-<img src="https://skillicons.dev/icons?i=docker,githubactions,vscode,jupyter&perline=6" />
+| Category | Tools & Libraries |
+|:---|:---|
+| **Languages** | Python 3.10+, Bash |
+| **Deep Learning & Vision** | PyTorch, TensorFlow / Keras, Ultralytics YOLOv8, MediaPipe, OpenCV, scikit-learn |
+| **NLP & LLM Systems** | Hugging Face Transformers, LangChain, Qdrant Vector DB, sentence-transformers, OpenRouter |
+| **Voice & Autonomous Agents** | LiveKit WebRTC Agents, Groq (LLaMA 3.3), Cartesia Sonic TTS, SpeechRecognition, gTTS |
+| **Data & APIs** | Geoapify Places & Weather, RapidAPI Sky Flights, openpyxl, pypdf, NumPy, Pandas |
+| **DevOps & Infrastructure** | Docker, GitHub Actions (Automated CI), Git, python-dotenv |
 
 </div>
 
 ---
 
-## 🎯 Featured Standalone Repositories
+## 🚀 Quick Start
 
-Explore my open-source AI systems, each packaged with self-contained dependencies and quickstarts:
+Every project is its own standalone repository with self-contained dependencies and guides:
 
-| Repository | Domain / Capability | Key Technologies |
-|---|---|---|
-| ✈️ **[livekit-trip-agent](https://github.com/ALIKAZMI001/livekit-trip-agent)** | Sub-500ms duplex voice assistant querying live flights & weather | `LiveKit` `Groq LLaMA 3.3` `Cartesia` `Docker` |
-| 📄 **[rag-pdf-chatbot](https://github.com/ALIKAZMI001/rag-pdf-chatbot)** | Strict grounded document Q&A with zero hallucination | `LangChain` `Qdrant Vector DB` `all-MiniLM` |
-| 🎙️ **[urdu-voice-assistant](https://github.com/ALIKAZMI001/urdu-voice-assistant)** | End-to-end Urdu speech-to-speech assistant with hardware fallback | `SpeechRecognition` `Mistral 7B` `gTTS` |
-| 🏏 **[llm-finetuning](https://github.com/ALIKAZMI001/llm-finetuning)** | Task-specific adaptation of BERT on GLUE & T5 for domain Q&A | `Hugging Face` `PyTorch` `Transformers` |
-| 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Custom dataset capture & fine-tuned YOLOv8n detector at 40+ FPS | `Ultralytics` `MediaPipe` `OpenCV` |
-| 🎂 **[age-gender-estimation](https://github.com/ALIKAZMI001/age-gender-estimation)** | Multi-task dual-head convolutional network trained on IMDB-WIKI | `TensorFlow` `Keras` `OpenCV` |
-| 🪪 **[face-recognition](https://github.com/ALIKAZMI001/face-recognition)** | Deep metric CNN vs classical KNN comparison with Tkinter GUI | `Keras` `scikit-learn` `Tkinter` `OpenCV` |
-| 🖱️ **[virtual-mouse](https://github.com/ALIKAZMI001/virtual-mouse)** | Sub-20ms hand landmark tracking for cursor control and pinch-clicks | `PyAutoGUI` `MediaPipe` `OpenCV` |
-| 🎮 **[gesture-game-control](https://github.com/ALIKAZMI001/gesture-game-control)** | Real-time spatial gesture mapping controlling a bundled Unity game | `Unity` `MediaPipe` `PyAutoGUI` |
+```bash
+# Clone any individual project directly:
+
+# ✈️ Real-time voice agent:
+git clone https://github.com/ALIKAZMI001/livekit-trip-agent.git
+
+# 📄 Vector RAG PDF search:
+git clone https://github.com/ALIKAZMI001/rag-pdf-chatbot.git
+
+# 🎯 YOLOv8 Edge Vision at 42+ FPS:
+git clone https://github.com/ALIKAZMI001/yolo-face-detection.git
+
+# 🎙️ Urdu Voice Assistant:
+git clone https://github.com/ALIKAZMI001/urdu-voice-assistant.git
+```
 
 ---
 
-## 📊 Analytics & Activity
-
 <div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=ALIKAZMI001&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6EE7F7&icon_color=3B82F6&text_color=ffffff&count_private=true" width="48%" />
-&nbsp;
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ALIKAZMI001&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=6EE7F7&text_color=ffffff&langs_count=8" width="48%" />
-
-<br/><br/>
-
-<img src="https://streak-stats.demolab.com?user=ALIKAZMI001&theme=tokyonight&hide_border=true&background=0D1117&ring=6EE7F7&fire=3B82F6&currStreakLabel=6EE7F7&sideLabels=ffffff&dates=888888" width="60%"/>
-
-<br/><br/>
 
 <img src="https://github-readme-activity-graph.vercel.app/api?username=ALIKAZMI001&theme=tokyo-night&bg_color=0D1117&color=6EE7F7&line=3B82F6&point=ffffff&area=true&hide_border=true" width="100%"/>
 
-</div>
+<br/><br/>
 
----
+### 📬 Connect & Collaborate
 
-<div align="center">
+Have an opportunity or interested in building production AI together?
 
-### 📬 Let's Connect
-
-[![Repositories](https://img.shields.io/badge/Explore%20All%20Repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ALIKAZMI001?tab=repositories)
+[![GitHub](https://img.shields.io/badge/GitHub-ALIKAZMI001-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ALIKAZMI001)
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ali984kazmi@gmail.com)
 
 <br/>
 
-*"The future belongs to those who build it."*
+⭐ **If you find these projects valuable, please consider leaving a star!**
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302B63,100:0F0C29&height=120&section=footer" width="100%"/>
 
