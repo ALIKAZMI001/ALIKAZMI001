@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=AI+%26+Deep+Learning+Engineer;Specializing+in+Real-Time+Vision+%26+Autonomous+Agents;Building+Sub-500ms+Voice+Pipelines+with+LiveKit+%26+Groq;Zero-Hallucination+RAG+Architectures+with+Qdrant;8+Production-Ready+AI+Repositories+%E2%80%A2+100%25+Runnable" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=AI+%26+Deep+Learning+Engineer;Specializing+in+Real-Time+Vision+%26+Autonomous+Agents;Building+Sub-500ms+Voice+Pipelines+with+LiveKit+%26+Groq;Zero-Hallucination+RAG+Architectures+with+Qdrant;9+Production-Ready+AI+Repositories+%E2%80%A2+100%25+Runnable" alt="Typing SVG" />
 
 <br/><br/>
 
@@ -76,6 +76,7 @@ Explore my open-source AI systems, each packaged with self-contained dependencie
 | 🏏 **[llm-finetuning](https://github.com/ALIKAZMI001/llm-finetuning)** | Task-specific adaptation of BERT on GLUE & T5 for domain Q&A | `Hugging Face` `PyTorch` `Transformers` |
 | 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Custom dataset capture & fine-tuned YOLOv8n detector at 40+ FPS | `Ultralytics` `MediaPipe` `OpenCV` |
 | 🎂 **[age-gender-estimation](https://github.com/ALIKAZMI001/age-gender-estimation)** | Multi-task dual-head convolutional network trained on IMDB-WIKI | `TensorFlow` `Keras` `OpenCV` |
+| 🪪 **[face-recognition](https://github.com/ALIKAZMI001/face-recognition)** | Deep metric CNN vs classical KNN comparison with Tkinter GUI | `Keras` `scikit-learn` `Tkinter` `OpenCV` |
 | 🖱️ **[virtual-mouse](https://github.com/ALIKAZMI001/virtual-mouse)** | Sub-20ms hand landmark tracking for cursor control and pinch-clicks | `PyAutoGUI` `MediaPipe` `OpenCV` |
 | 🎮 **[gesture-game-control](https://github.com/ALIKAZMI001/gesture-game-control)** | Real-time spatial gesture mapping controlling a bundled Unity game | `Unity` `MediaPipe` `PyAutoGUI` |
 
