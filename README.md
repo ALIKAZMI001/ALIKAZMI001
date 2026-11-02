@@ -4,15 +4,15 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=AI+%26+Deep+Learning+Engineer;Specializing+in+Real-Time+Vision+%26+Autonomous+Agents;Building+Sub-500ms+Voice+Pipelines+with+LiveKit+%26+Groq;Zero-Hallucination+RAG+Architectures+with+Qdrant;10+Shipped+Projects+%E2%80%A2+100%25+Runnable+Code" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=24&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=AI+%26+Deep+Learning+Engineer;Specializing+in+Real-Time+Vision+%26+Autonomous+Agents;Building+Sub-500ms+Voice+Pipelines+with+LiveKit+%26+Groq;Zero-Hallucination+RAG+Architectures+with+Qdrant;8+Production-Ready+AI+Repositories+%E2%80%A2+100%25+Runnable" alt="Typing SVG" />
 
 <br/><br/>
 
 [![GitHub followers](https://img.shields.io/github/followers/ALIKAZMI001?style=for-the-badge&color=3B82F6&labelColor=0D1117&logo=github&label=Followers)](https://github.com/ALIKAZMI001?tab=followers)
 &nbsp;
-[![GitHub Stars](https://img.shields.io/github/stars/ALIKAZMI001?style=for-the-badge&color=FFD700&labelColor=0D1117&logo=github&label=Total%20Stars)](https://github.com/ALIKAZMI001)
+[![GitHub Stars](https://img.shields.io/github/stars/ALIKAZMI001?style=for-the-badge&color=FFD700&labelColor=0D1117&logo=github&label=Total%20Stars)](https://github.com/ALIKAZMI001?tab=repositories)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Main%20Portfolio-Projects-6EE7F7?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ALIKAZMI001/Projects)
+[![Repositories](https://img.shields.io/badge/All%20Repositories-Explore-6EE7F7?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ALIKAZMI001?tab=repositories)
 
 </div>
 
@@ -35,7 +35,7 @@ class AliKazmi:
             "High-Throughput Edge Vision (YOLOv8, MediaPipe, OpenCV)",
             "Transformer Fine-Tuning (BERT, T5, PyTorch)"
         ]
-        self.portfolio_projects = 10
+        self.specialties = ["Production AI", "Duplex Audio", "Zero-Hallucination RAG"]
 
     def build(self):
         return "End-to-End AI systems that perform in production, not just notebooks."
@@ -64,22 +64,20 @@ class AliKazmi:
 
 ---
 
-## 🎯 Featured Portfolio Projects
+## 🎯 Featured Standalone Repositories
 
-All 10 projects are available with setup guides and runnable code in **[ALIKAZMI001/Projects](https://github.com/ALIKAZMI001/Projects)**:
+Explore my open-source AI systems, each packaged with self-contained dependencies and quickstarts:
 
-| Project | Highlight | Stack |
+| Repository | Domain / Capability | Key Technologies |
 |---|---|---|
-| ✈️ **[LiveKit Trip Agent](https://github.com/ALIKAZMI001/Projects/tree/main/livekit-trip-agent)** | Sub-500ms duplex voice assistant querying live flights & weather | `LiveKit` `Groq LLaMA 3.3` `Cartesia` `Docker` |
-| 📄 **[RAG PDF Chatbot](https://github.com/ALIKAZMI001/Projects/tree/main/rag-pdf-chatbot)** | Strict grounded question-answering with zero hallucination | `LangChain` `Qdrant Vector DB` `all-MiniLM` |
-| 🎙️ **[Urdu Voice Assistant](https://github.com/ALIKAZMI001/Projects/tree/main/urdu-voice-assistant)** | End-to-end Urdu speech-to-speech loop with hardware fallback | `SpeechRecognition` `Mistral 7B` `gTTS` |
-| 🏏 **[LLM Fine-Tuning](https://github.com/ALIKAZMI001/Projects/tree/main/llm-finetuning)** | Task-specific adaptation of BERT on GLUE & T5 for domain Q&A | `Hugging Face` `PyTorch` `Transformers` |
-| 🎯 **[YOLOv8 Detection](https://github.com/ALIKAZMI001/Projects/tree/main/yolo-face-detection)** | Self-captured dataset fine-tuned on YOLOv8n at 42+ FPS | `Ultralytics` `MediaPipe` `OpenCV` |
-| 🎂 **[Age & Gender CNN](https://github.com/ALIKAZMI001/Projects/tree/main/age-gender-estimation)** | Multi-task dual-head convolutional network trained on IMDB-WIKI | `TensorFlow` `Keras` `OpenCV` |
-| 🪪 **[Face Recognition](https://github.com/ALIKAZMI001/Projects/tree/main/face-recognition)** | Deep metric vs classical KNN benchmark with complete Tkinter UI | `scikit-learn` `Keras` `Tkinter` |
-| 🙌 **[Gesture Attendance](https://github.com/ALIKAZMI001/Projects/tree/main/gesture-attendance)** | Contactless attendance automation syncing straight into Excel | `MediaPipe` `openpyxl` `OpenCV` |
-| 🖱️ **[Virtual Mouse](https://github.com/ALIKAZMI001/Projects/tree/main/virtual-mouse)** | Sub-20ms hand-tracking cursor control with click gestures | `PyAutoGUI` `MediaPipe` `OpenCV` |
-| 🎮 **[Gesture Game Control](https://github.com/ALIKAZMI001/Projects/tree/main/gesture-game-control)** | Real-time spatial gesture mapping for Unity game control | `Unity` `MediaPipe` `PyAutoGUI` |
+| ✈️ **[livekit-trip-agent](https://github.com/ALIKAZMI001/livekit-trip-agent)** | Sub-500ms duplex voice assistant querying live flights & weather | `LiveKit` `Groq LLaMA 3.3` `Cartesia` `Docker` |
+| 📄 **[rag-pdf-chatbot](https://github.com/ALIKAZMI001/rag-pdf-chatbot)** | Strict grounded document Q&A with zero hallucination | `LangChain` `Qdrant Vector DB` `all-MiniLM` |
+| 🎙️ **[urdu-voice-assistant](https://github.com/ALIKAZMI001/urdu-voice-assistant)** | End-to-end Urdu speech-to-speech assistant with hardware fallback | `SpeechRecognition` `Mistral 7B` `gTTS` |
+| 🏏 **[llm-finetuning](https://github.com/ALIKAZMI001/llm-finetuning)** | Task-specific adaptation of BERT on GLUE & T5 for domain Q&A | `Hugging Face` `PyTorch` `Transformers` |
+| 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Custom dataset capture & fine-tuned YOLOv8n detector at 40+ FPS | `Ultralytics` `MediaPipe` `OpenCV` |
+| 🎂 **[age-gender-estimation](https://github.com/ALIKAZMI001/age-gender-estimation)** | Multi-task dual-head convolutional network trained on IMDB-WIKI | `TensorFlow` `Keras` `OpenCV` |
+| 🖱️ **[virtual-mouse](https://github.com/ALIKAZMI001/virtual-mouse)** | Sub-20ms hand landmark tracking for cursor control and pinch-clicks | `PyAutoGUI` `MediaPipe` `OpenCV` |
+| 🎮 **[gesture-game-control](https://github.com/ALIKAZMI001/gesture-game-control)** | Real-time spatial gesture mapping controlling a bundled Unity game | `Unity` `MediaPipe` `PyAutoGUI` |
 
 ---
 
@@ -107,7 +105,7 @@ All 10 projects are available with setup guides and runnable code in **[ALIKAZMI
 
 ### 📬 Let's Connect
 
-[![Portfolio](https://img.shields.io/badge/Main%20Portfolio-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ALIKAZMI001/Projects)
+[![Repositories](https://img.shields.io/badge/Explore%20All%20Repositories-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ALIKAZMI001?tab=repositories)
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ali984kazmi@gmail.com)
 
 <br/>
