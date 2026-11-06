@@ -42,7 +42,7 @@ End-to-end, standalone AI systems with modular architectures and self-contained 
 | 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Computer Vision | Ultralytics YOLOv8, MediaPipe, OpenCV | Custom dataset capture & fine-tuned YOLOv8n detector running at 40+ FPS |
 | 🎂 **[age-gender-estimation](https://github.com/ALIKAZMI001/age-gender-estimation)** | Computer Vision | TensorFlow, Keras, OpenCV, IMDB-WIKI | Dual-head multi-task CNN predicting age and gender live on webcam |
 | 🪪 **[face-recognition](https://github.com/ALIKAZMI001/face-recognition)** | Computer Vision | Keras, scikit-learn, Tkinter, OpenCV | Deep metric CNN vs classical KNN comparison inside a desktop app |
-| 🖱️ **[virtual-mouse](https://github.com/ALIKAZMI001/virtual-mouse)** | Spatial AI | MediaPipe, PyAutoGUI, OpenCV | Sub-20ms hand landmark tracking for cursor control and pinch-clicks |
+| 🤖 **[ALI-CODE](https://github.com/ALIKAZMI001/ALI-CODE)** | Dev Tooling | TypeScript, Node.js, OpenAI SDK, Cloudflare Workers | Claude Code-style terminal coding agent with zero-setup shared models and automatic multi-provider failover |
 | 🎮 **[gesture-game-control](https://github.com/ALIKAZMI001/gesture-game-control)** | Spatial AI | MediaPipe, PyAutoGUI, Unity Engine | Real-time spatial gesture mapping controlling a bundled Unity game |
 
 ---
@@ -121,7 +121,7 @@ Clean, modular data pipelines engineered for low latency and high reliability:
                                            [ Grounded Fact-Based Answer ]
 ```
 
-### 3. Edge Vision & Spatial Tracking Loop (`yolo-face-detection` & `virtual-mouse`)
+### 3. Edge Vision & Spatial Tracking Loop (`yolo-face-detection`)
 ```text
   [ 720p/1080p Webcam Feed ]
               │
@@ -166,7 +166,7 @@ Technical metrics across all deployed standalone systems:
 | **YOLOv8 Detection** | Custom Face Detection | YOLOv8n (Custom Weights) | **42+ FPS** @ 640×640 | CPU or CUDA GPU |
 | **Age & Gender Estimator** | Joint Demographics | Shared CNN Dual-Head | **30 FPS** live webcam | CPU / Standard Webcam |
 | **Face Recognition** | Identity Verification | CNN Classifier vs KNN | **> 96%** Top-1 Accuracy | Standard Laptop |
-| **Virtual Mouse** | Hardware-Free Navigation | MediaPipe Spatial Tracking | **< 18ms** latency | Low-end CPU |
+| **Ali Code** | Terminal Coding Agent | Multi-Provider LLM Router | **42/42** Unit Tests Passing | Any Terminal / Node 20+ |
 | **Gesture Game Control** | Gameplay Key Injection | MediaPipe + Key Simulator | **< 35ms** keypress dispatch | Standard PC |
 
 ---
