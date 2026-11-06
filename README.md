@@ -36,13 +36,13 @@ End-to-end, standalone AI systems with modular architectures and self-contained 
 | Project | Domain | Key Technologies | Real-World Capability |
 |:---|:---:|:---|:---|
 | ✈️ **[livekit-trip-agent](https://github.com/ALIKAZMI001/livekit-trip-agent)** | Voice Agent | LiveKit, Groq LLaMA 3.3, Cartesia, Docker | Sub-500ms duplex voice assistant querying live flights, weather & booking |
+| 🤖 **[ALI-CODE](https://github.com/ALIKAZMI001/ALI-CODE)** | Dev Tooling | TypeScript, Node.js, OpenAI SDK, Cloudflare Workers | Claude Code-style terminal coding agent with zero-setup shared models and automatic multi-provider failover |
 | 📄 **[rag-pdf-chatbot](https://github.com/ALIKAZMI001/rag-pdf-chatbot)** | RAG / NLP | LangChain, Qdrant, sentence-transformers | Grounded document Q&A with strict anti-hallucination boundaries |
 | 🎙️ **[urdu-voice-assistant](https://github.com/ALIKAZMI001/urdu-voice-assistant)** | Speech AI | SpeechRecognition, Mistral 7B, gTTS | Complete Urdu speech-to-speech assistant with multi-device fallback |
-| 🏏 **[llm-finetuning](https://github.com/ALIKAZMI001/llm-finetuning)** | Deep Learning | Hugging Face Transformers, PyTorch | BERT fine-tuned on GLUE/MRPC & T5 cricket Q&A chatbot from scratch |
 | 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Computer Vision | Ultralytics YOLOv8, MediaPipe, OpenCV | Custom dataset capture & fine-tuned YOLOv8n detector running at 40+ FPS |
+| 🏏 **[llm-finetuning](https://github.com/ALIKAZMI001/llm-finetuning)** | Deep Learning | Hugging Face Transformers, PyTorch | BERT fine-tuned on GLUE/MRPC & T5 cricket Q&A chatbot from scratch |
 | 🎂 **[age-gender-estimation](https://github.com/ALIKAZMI001/age-gender-estimation)** | Computer Vision | TensorFlow, Keras, OpenCV, IMDB-WIKI | Dual-head multi-task CNN predicting age and gender live on webcam |
-| 🪪 **[face-recognition](https://github.com/ALIKAZMI001/face-recognition)** | Computer Vision | Keras, scikit-learn, Tkinter, OpenCV | Deep metric CNN vs classical KNN comparison inside a desktop app |
-| 🤖 **[ALI-CODE](https://github.com/ALIKAZMI001/ALI-CODE)** | Dev Tooling | TypeScript, Node.js, OpenAI SDK, Cloudflare Workers | Claude Code-style terminal coding agent with zero-setup shared models and automatic multi-provider failover |
+| 🪪 **[CNN/KNN face-recognition](https://github.com/ALIKAZMI001/face-recognition)** | Computer Vision | Keras, scikit-learn, Tkinter, OpenCV | Deep metric CNN vs classical KNN comparison inside a desktop app |
 | 🎮 **[gesture-game-control](https://github.com/ALIKAZMI001/gesture-game-control)** | Spatial AI | MediaPipe, PyAutoGUI, Unity Engine | Real-time spatial gesture mapping controlling a bundled Unity game |
 
 ---
@@ -160,13 +160,13 @@ Technical metrics across all deployed standalone systems:
 | System | Primary Task | Model / Backbone | Real-World Metric | Hardware Specs |
 |---|---|---|---|---|
 | **LiveKit Trip Agent** | Duplex Voice Assistant | LLaMA 3.3 + Cartesia | **< 480ms** speech-to-speech | Standard CPU / Cloud |
+| **Ali Code** | Terminal Coding Agent | Multi-Provider LLM Router | **42/42** Unit Tests Passing | Any Terminal / Node 20+ |
 | **RAG PDF Chatbot** | Document QA | all-MiniLM + Mistral 7B | **~1.1s** retrieval + synth | CPU (Vector DB on disk) |
 | **Urdu Voice Assistant** | Multi-hop Speech Pipeline | Google STT + Mistral 7B | **Zero Crash** audio fallback | CPU + Standard Mic |
-| **LLM Fine-tuning** | Sentence Pairing & QA | BERT & T5-Small | **0.38 Eval Loss** (MRPC) | Single GPU / Colab |
 | **YOLOv8 Detection** | Custom Face Detection | YOLOv8n (Custom Weights) | **42+ FPS** @ 640×640 | CPU or CUDA GPU |
+| **LLM Fine-tuning** | Sentence Pairing & QA | BERT & T5-Small | **0.38 Eval Loss** (MRPC) | Single GPU / Colab |
 | **Age & Gender Estimator** | Joint Demographics | Shared CNN Dual-Head | **30 FPS** live webcam | CPU / Standard Webcam |
-| **Face Recognition** | Identity Verification | CNN Classifier vs KNN | **> 96%** Top-1 Accuracy | Standard Laptop |
-| **Ali Code** | Terminal Coding Agent | Multi-Provider LLM Router | **42/42** Unit Tests Passing | Any Terminal / Node 20+ |
+| **CNN/KNN Face Recognition** | Identity Verification | CNN Classifier vs KNN | **> 96%** Top-1 Accuracy | Standard Laptop |
 | **Gesture Game Control** | Gameplay Key Injection | MediaPipe + Key Simulator | **< 35ms** keypress dispatch | Standard PC |
 
 ---
