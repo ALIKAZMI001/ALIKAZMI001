@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=Production-Ready+AI+%26+Deep+Learning+Systems;Sub-500ms+Duplex+Voice+Agent+with+LiveKit+%26+Groq;Zero-Hallucination+Vector+RAG+Pipeline+with+Qdrant;Real-Time+YOLOv8+%26+MediaPipe+Vision+at+40%2B+FPS;Clean+Architecture+%E2%80%A2+100%25+Runnable+Code" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=Production-Ready+AI+%26+Deep+Learning+Systems;Sub-500ms+Duplex+Voice+Agent+with+LiveKit+%26+Groq;Zero-Hallucination+Vector+RAG+Pipeline+with+Qdrant;Real-Time+YOLOv8+%26+MediaPipe+Vision+at+40%2B+FPS;Terminal+AI+Coding+Agent+with+Zero-Setup+Multi-Provider+Failover;Clean+Architecture+%E2%80%A2+100%25+Runnable+Code" alt="Typing SVG"/>
 
 <br/><br/>
 
