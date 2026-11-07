@@ -218,8 +218,8 @@ git clone https://github.com/ALIKAZMI001/livekit-trip-agent.git
 # 📄 Vector RAG PDF search:
 git clone https://github.com/ALIKAZMI001/rag-pdf-chatbot.git
 
-# 🎯 YOLOv8 Edge Vision at 42+ FPS:
-git clone https://github.com/ALIKAZMI001/yolo-face-detection.git
+# 🤖 Autonomous Terminal Coding Agent (Ali Code):
+git clone https://github.com/ALIKAZMI001/ALI-CODE.git
 
 # 🎙️ Urdu Voice Assistant:
 git clone https://github.com/ALIKAZMI001/urdu-voice-assistant.git
