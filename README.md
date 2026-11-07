@@ -121,34 +121,47 @@ Clean, modular data pipelines engineered for low latency and high reliability:
                                            [ Grounded Fact-Based Answer ]
 ```
 
-### 3. Edge Vision & Spatial Tracking Loop (`yolo-face-detection`)
+### 3. Autonomous Terminal Coding Agent (`ALI-CODE`)
 ```text
-  [ 720p/1080p Webcam Feed ]
+  [ User Prompt ]
               │
-              ▼ (OpenCV BGR Matrix)
+              ▼ (REPL Input Parser)
   ┌────────────────────────────────────────┐
-  │  Color Space Conversion (BGR ➔ RGB)    │
+  │  System Prompt + AGENTS.md Context     │
+  └───────────────────┬────────────────────┘
+                      │
+                      ▼ (tool_choice: auto)
+  ┌────────────────────────────────────────┐
+  │  LLM Streaming Engine (OpenAI SDK)     │ ◄──── (Loop Until No Tool Calls)
+  └───────────────────┬────────────────────┘            ▲
+                      │                                 │
+                      ▼ (Tool Call Dispatch)             │
+  ┌────────────────────────────────────────┐            │
+  │  Permission Gate                       │            │
+  │  (default / accept-edits / plan / yolo)│            │
+  └───────────────────┬────────────────────┘            │
+                      │                                 │
+                      ▼                                 │
+  ┌──────┬───────┬───────┬───────┬────────┐            │
+  │ Read │ Write │ Edit  │ Bash  │ Task   │            │
+  │      │       │       │       │(Agent) │            │
+  └──┬───┴───┬───┴───┬───┴───┬───┴────┬───┘            │
+     └───────┴───────┴───────┴────────┘                 │
+                      │                                 │
+                      ▼ (Tool Results, ≤30k chars)      │
+  ┌────────────────────────────────────────┐            │
+  │  Context Manager (Auto-Compact @ 75%) │ ───────────┘
+  └───────────────────┬────────────────────┘
+                      │ (No More Tool Calls)
+                      ▼
+  ┌────────────────────────────────────────┐
+  │  Key Pool Router (Round-Robin)         │
+  │  OpenRouter ➔ Groq ➔ OpenAI Failover  │
+  │  401→Dead  429→60s Cool  5xx→20s Cool │
   └───────────────────┬────────────────────┘
                       │
                       ▼
-  ┌────────────────────────────────────────┐
-  │  MediaPipe / YOLOv8 Tensor Inference   │ ──► (40+ FPS Hardware-Accelerated)
-  └───────────────────┬────────────────────┘
-                      │
-                      ▼ (Raw Landmark Matrix [x, y, z])
-  ┌────────────────────────────────────────┐
-  │  Exponential Moving Average (EMA)      │ ──► (Removes Jitter & Noise)
-  └───────────────────┬────────────────────┘
-                      │
-                      ▼ (Stabilized Coordinates)
-  ┌────────────────────────────────────────┐
-  │  Euclidean Vector Metric Distance      │ ──► (Dynamic Gesture Classification)
-  └───────────────────┬────────────────────┘
-                      │
-                      ▼ (Action Dispatch)
-  ┌────────────────────────────────────────┐
-  │  PyAutoGUI / System Input Bridge       │ ──► [ Cursor Movement / Click / Keys ]
-  └────────────────────────────────────────┘
+            [ Rendered Response ]
 ```
 
 ---
