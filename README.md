@@ -123,45 +123,53 @@ Clean, modular data pipelines engineered for low latency and high reliability:
 
 ### 3. Autonomous Terminal Coding Agent (`ALI-CODE`)
 ```text
-  [ User Prompt ]
-              │
-              ▼ (REPL Input Parser)
-  ┌────────────────────────────────────────┐
-  │  System Prompt + AGENTS.md Context     │
-  └───────────────────┬────────────────────┘
-                      │
-                      ▼ (tool_choice: auto)
-  ┌────────────────────────────────────────┐
-  │  LLM Streaming Engine (OpenAI SDK)     │ ◄──── (Loop Until No Tool Calls)
-  └───────────────────┬────────────────────┘            ▲
-                      │                                 │
-                      ▼ (Tool Call Dispatch)             │
-  ┌────────────────────────────────────────┐            │
-  │  Permission Gate                       │            │
-  │  (default / accept-edits / plan / yolo)│            │
-  └───────────────────┬────────────────────┘            │
-                      │                                 │
-                      ▼                                 │
-  ┌──────┬───────┬───────┬───────┬────────┐            │
-  │ Read │ Write │ Edit  │ Bash  │ Task   │            │
-  │      │       │       │       │(Agent) │            │
-  └──┬───┴───┬───┴───┬───┴───┬───┴────┬───┘            │
-     └───────┴───────┴───────┴────────┘                 │
-                      │                                 │
-                      ▼ (Tool Results, ≤30k chars)      │
-  ┌────────────────────────────────────────┐            │
-  │  Context Manager (Auto-Compact @ 75%) │ ───────────┘
-  └───────────────────┬────────────────────┘
-                      │ (No More Tool Calls)
-                      ▼
-  ┌────────────────────────────────────────┐
-  │  Key Pool Router (Round-Robin)         │
-  │  OpenRouter ➔ Groq ➔ OpenAI Failover  │
-  │  401→Dead  429→60s Cool  5xx→20s Cool │
-  └───────────────────┬────────────────────┘
-                      │
-                      ▼
-            [ Rendered Response ]
+                [ User CLI / Terminal Input ]
+                              │
+                              ▼ (Interactive REPL Parser)
+  ┌───────────────────────────────────────────────────────┐
+  │     System Prompt & Workspace Context (AGENTS.md)     │
+  └───────────────────────────┬───────────────────────────┘
+                              │
+                              ▼
+  ┌───────────────────────────────────────────────────────┐
+  │       Resilient Key-Pool & Failover API Router        │
+  │    OpenRouter  ──►  Groq Cloud  ──►  OpenAI Direct    │
+  │  (Automatic Key Rotation • Cooldown • Auto-Fallback)  │
+  └───────────────────────────┬───────────────────────────┘
+                              │
+                              ▼ (Streaming Token Evaluation)
+  ┌───────────────────────────────────────────────────────┐
+  │      Autonomous Agent Engine & Tool Calling Loop      │
+  └───────────────────────────┬───────────────────────────┘
+                              │
+                              ▼ (Dispatched Tool Calls)
+  ┌───────────────────────────────────────────────────────┐
+  │   Security & Permission Gate (Workspace Sandboxed)    │
+  │    Modes: default (confirm) │ accept-edits │ yolo     │
+  └───────────────────────────┬───────────────────────────┘
+                              │
+            ┌─────────────────┼─────────────────┐
+            ▼                 ▼                 ▼
+    ┌───────────────┐ ┌───────────────┐ ┌───────────────┐
+    │ File System   │ │ Shell Command │ │ Subagent Task │
+    │ Read/Write/Edt│ │ Bash / Git    │ │ Delegated Job │
+    └───────┬───────┘ └───────┬───────┘ └───────┬───────┘
+            └─────────────────┼─────────────────┘
+                              │
+                              ▼ (Sanitized Execution Result ≤ 30k chars)
+  ┌───────────────────────────────────────────────────────┐
+  │   Context Compaction Engine (Auto-Summarize @ 75%)    │
+  └───────────────────────────┬───────────────────────────┘
+                              │
+              ┌───────────────┴───────────────┐
+              ▼ (Next Action Loop)            ▼ (Task Completed)
+    ┌───────────────────┐           ┌───────────────────┐
+    │ Feed History Back │           │ Claude-Style UI   │
+    │ (↺ Next Turn Loop)│           │ Boxed Diff & Text │
+    └─────────┬─────────┘           └─────────┬─────────┘
+              │                               │
+              └──► (Next Iteration)           ▼
+                                  [ User Terminal / REPL ]
 ```
 
 ---
