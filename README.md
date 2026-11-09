@@ -49,47 +49,6 @@ End-to-end, standalone AI systems with modular architectures and self-contained 
 
 ---
 
-Production systems built in industry. They are proprietary, so this section describes the flow only — **no code, data or internal details are published.**
-
-### Medical Coding AI
-LLM-powered system that turns clinical records into billing codes.
-
-```text
-  Medical record (PDF / text)
-              │
-              ▼
-  Extraction ─ find procedures & diagnoses, redact personal info
-              │
-              ▼
-  CPT/HCPCS prediction ─ code + modifiers (rule-first modifier engine)
-              │
-              ▼
-  ICD-10-CM prediction ─ retrieval (vector + keyword search) + LLM
-              │
-              ▼
-  One result per record, plus accuracy evaluation against a labelled set
-```
-
-**Stack:** Python · LLM agents · RAG · microservices · Docker · CI/CD
-
-### CCM Outreach Agent
-Voice AI for chronic-care-management patient outreach.
-
-```text
-  Outbound call (manual / scheduled / auto-redial)   or   Inbound call
-              │
-              ▼
-  Verify the patient's identity
-              │
-              ▼
-  Run the monthly wellness questionnaire as a natural phone conversation
-  (voicemail detection · resume after dropped call · schedule callback · hand-off to a human)
-              │
-              ▼
-  Save transcript, summary and outcome, and report back to the care platform
-```
-
-**Stack:** Python · LiveKit · SIP telephony · LLM · Flask console · Docker
 
 ---
 
