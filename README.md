@@ -37,6 +37,8 @@ End-to-end, standalone AI systems with modular architectures and self-contained 
 |:---|:---:|:---|:---|
 | ✈️ **[livekit-trip-agent](https://github.com/ALIKAZMI001/livekit-trip-agent)** | Voice Agent | LiveKit, Groq LLaMA 3.3, Cartesia, Docker | Sub-500ms duplex voice assistant querying live flights, weather & booking |
 | 🤖 **[ALI-CODE](https://github.com/ALIKAZMI001/ALI-CODE)** | Dev Tooling | TypeScript, Node.js, OpenAI SDK, Cloudflare Workers | Claude Code-style terminal coding agent with zero-setup shared models and automatic multi-provider failover |
+| 🏥 **Medical Coding AI** *(proprietary — case study)* | Healthcare AI | Python, LLM Agents, RAG, Docker, CI/CD | LLM pipeline that turns clinical records into CPT/HCPCS and ICD-10-CM billing codes, redacting personal info along the way |
+| 📞 **CCM Outreach Agent** *(proprietary — case study)* | Voice AI / Healthcare | Python, LiveKit, SIP, LLM, Docker | Voice agent that calls chronic-care patients, verifies identity and runs the monthly wellness questionnaire as a natural conversation |
 | 📄 **[rag-pdf-chatbot](https://github.com/ALIKAZMI001/rag-pdf-chatbot)** | RAG / NLP | LangChain, Qdrant, sentence-transformers | Grounded document Q&A with strict anti-hallucination boundaries |
 | 🎙️ **[urdu-voice-assistant](https://github.com/ALIKAZMI001/urdu-voice-assistant)** | Speech AI | SpeechRecognition, Mistral 7B, gTTS | Complete Urdu speech-to-speech assistant with multi-device fallback |
 | 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Computer Vision | Ultralytics YOLOv8, MediaPipe, OpenCV | Custom dataset capture & fine-tuned YOLOv8n detector running at 40+ FPS |
@@ -44,6 +46,52 @@ End-to-end, standalone AI systems with modular architectures and self-contained 
 | 🎂 **[age-gender-estimation](https://github.com/ALIKAZMI001/age-gender-estimation)** | Computer Vision | TensorFlow, Keras, OpenCV, IMDB-WIKI | Dual-head multi-task CNN predicting age and gender live on webcam |
 | 🪪 **[CNN/KNN face-recognition](https://github.com/ALIKAZMI001/face-recognition)** | Computer Vision | Keras, scikit-learn, Tkinter, OpenCV | Deep metric CNN vs classical KNN comparison inside a desktop app |
 | 🎮 **[gesture-game-control](https://github.com/ALIKAZMI001/gesture-game-control)** | Spatial AI | MediaPipe, PyAutoGUI, Unity Engine | Real-time spatial gesture mapping controlling a bundled Unity game |
+
+---
+
+## 🏥 Professional Work
+
+Production systems built in industry. They are proprietary, so this section describes the flow only — **no code, data or internal details are published.**
+
+### Medical Coding AI
+LLM-powered system that turns clinical records into billing codes.
+
+```text
+  Medical record (PDF / text)
+              │
+              ▼
+  Extraction ─ find procedures & diagnoses, redact personal info
+              │
+              ▼
+  CPT/HCPCS prediction ─ code + modifiers (rule-first modifier engine)
+              │
+              ▼
+  ICD-10-CM prediction ─ retrieval (vector + keyword search) + LLM
+              │
+              ▼
+  One result per record, plus accuracy evaluation against a labelled set
+```
+
+**Stack:** Python · LLM agents · RAG · microservices · Docker · CI/CD
+
+### CCM Outreach Agent
+Voice AI for chronic-care-management patient outreach.
+
+```text
+  Outbound call (manual / scheduled / auto-redial)   or   Inbound call
+              │
+              ▼
+  Verify the patient's identity
+              │
+              ▼
+  Run the monthly wellness questionnaire as a natural phone conversation
+  (voicemail detection · resume after dropped call · schedule callback · hand-off to a human)
+              │
+              ▼
+  Save transcript, summary and outcome, and report back to the care platform
+```
+
+**Stack:** Python · LiveKit · SIP telephony · LLM · Flask console · Docker
 
 ---
 
@@ -182,6 +230,8 @@ Technical metrics across all deployed standalone systems:
 |---|---|---|---|---|
 | **LiveKit Trip Agent** | Duplex Voice Assistant | LLaMA 3.3 + Cartesia | **< 480ms** speech-to-speech | Standard CPU / Cloud |
 | **Ali Code** | Terminal Coding Agent | Multi-Provider LLM Router | **42/42** Unit Tests Passing | Any Terminal / Node 20+ |
+| **Medical Coding AI** | Clinical Record → Billing Codes | LLM Agents + RAG (vector + keyword retrieval) | **Evaluated** against a labelled dataset | Cloud / Docker |
+| **CCM Outreach Agent** | Patient Voice Outreach | LiveKit + SIP + LLM | **Inbound + outbound** calls, voicemail & dropped-call recovery | Cloud / Docker |
 | **RAG PDF Chatbot** | Document QA | all-MiniLM + Mistral 7B | **~1.1s** retrieval + synth | CPU (Vector DB on disk) |
 | **Urdu Voice Assistant** | Multi-hop Speech Pipeline | Google STT + Mistral 7B | **Zero Crash** audio fallback | CPU + Standard Mic |
 | **YOLOv8 Detection** | Custom Face Detection | YOLOv8n (Custom Weights) | **42+ FPS** @ 640×640 | CPU or CUDA GPU |
