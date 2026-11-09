@@ -49,8 +49,6 @@ End-to-end, standalone AI systems with modular architectures and self-contained 
 
 ---
 
-## 🏥 Professional Work
-
 Production systems built in industry. They are proprietary, so this section describes the flow only — **no code, data or internal details are published.**
 
 ### Medical Coding AI
