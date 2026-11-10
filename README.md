@@ -4,7 +4,7 @@
 
 <br/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=Production-Ready+AI+%26+Deep+Learning+Systems;Sub-500ms+Duplex+Voice+Agent+with+LiveKit+%26+Groq;Zero-Hallucination+Vector+RAG+Pipeline+with+Qdrant;Real-Time+YOLOv8+%26+MediaPipe+Vision+at+40%2B+FPS;Terminal+AI+Agent+with+Zero-Setup+Failover;Clean+Architecture+%E2%80%A2+100%25+Runnable+Code" alt="Typing SVG"/>
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=22&duration=2600&pause=800&color=6EE7F7&center=true&vCenter=true&width=800&lines=Production-Ready+AI+%26+Deep+Learning+Systems;Sub-500ms+Duplex+Voice+Agent+with+LiveKit+%26+Groq;Zero-Hallucination+Vector+RAG+Pipeline+with+Qdrant;Real-Time+YOLOv8+%26+MediaPipe+Vision+at+40%2B+FPS;Terminal+AI+Agent+with+Zero-Setup+Failover;LLM+Medical+Coding+Pipeline%3A+CPT+%26+ICD-10-CM+Codes;Patient+Outreach+Voice+Agent%3A+Inbound+%26+Outbound;Urdu+Speech-to-Speech+Voice+Assistant;BERT+%26+T5+Fine-Tuning+on+GLUE+and+Cricket+Q%26A;Clean+Architecture+%E2%80%A2+100%25+Runnable+Code" alt="Typing SVG"/>
 
 <br/><br/>
 
