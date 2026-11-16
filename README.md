@@ -14,7 +14,7 @@
 &nbsp;
 [![Repositories](https://img.shields.io/badge/All%20Repositories-Explore-6EE7F7?style=for-the-badge&logo=github&logoColor=black)](https://github.com/ALIKAZMI001?tab=repositories)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-6EE7F7?style=for-the-badge&logo=netlify&logoColor=black)](https://statuesque-hamster-da7089.netlify.app/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit%20Site-6EE7F7?style=for-the-badge&logo=netlify&logoColor=black)](https://potfolio-ali.netlify.app/)
 
 <br/>
 
