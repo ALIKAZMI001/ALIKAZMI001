@@ -38,6 +38,7 @@ End-to-end, standalone AI systems with modular architectures and self-contained 
 | 🤖 **[ALI-CODE](https://github.com/ALIKAZMI001/ALI-CODE)** | Dev Tooling | TypeScript, Node.js, OpenAI SDK, Cloudflare Workers | Claude Code-style terminal coding agent with zero-setup shared models and automatic multi-provider failover |
 | 🏥 **[medical-coding-ai](https://github.com/ALIKAZMI001/medical-coding-ai)** | Healthcare AI | Python, LLM Agents, RAG, Docker, CI/CD | LLM pipeline that turns clinical records into CPT/HCPCS and ICD-10-CM billing codes, redacting personal info along the way |
 | 📞 **[ccm-outreach-agent](https://github.com/ALIKAZMI001/ccm-outreach-agent)** | Voice AI / Healthcare | Python, LiveKit, SIP, LLM, Docker | Voice agent that makes and receives calls with chronic-care patients and runs the monthly wellness questionnaire as a natural conversation — Brief or Detailed call options, with patient determination on inbound calls |
+| ❤️ **[ecg-lstm-fpga](https://github.com/ALIKAZMI001/ecg-lstm-fpga)** | Embedded AI / Healthcare | LSTM, HLS, Vitis, FPGA | Domain-specific LSTM for ECG monitoring implemented on an FPGA, with hardware-software co-design for real-time analysis |
 | 📄 **[rag-pdf-chatbot](https://github.com/ALIKAZMI001/rag-pdf-chatbot)** | RAG / NLP | LangChain, Qdrant, sentence-transformers | Grounded document Q&A with strict anti-hallucination boundaries |
 | 🎙️ **[urdu-voice-assistant](https://github.com/ALIKAZMI001/urdu-voice-assistant)** | Speech AI | SpeechRecognition, Mistral 7B, gTTS | Complete Urdu speech-to-speech assistant with multi-device fallback |
 | 🎯 **[yolo-face-detection](https://github.com/ALIKAZMI001/yolo-face-detection)** | Computer Vision | Ultralytics YOLOv8, MediaPipe, OpenCV | Custom dataset capture & fine-tuned YOLOv8n detector running at 40+ FPS |
@@ -58,6 +59,7 @@ Technical metrics across all deployed standalone systems:
 | **Ali Code** | Terminal Coding Agent | Multi-Provider LLM Router | **42/42** Unit Tests Passing | Any Terminal / Node 20+ |
 | **Medical Coding AI** | Clinical Record → Billing Codes | LLM Agents + RAG (vector + keyword retrieval) | **Evaluated** against a labelled dataset | Cloud / Docker |
 | **CCM Outreach Agent** | Patient Voice Outreach | LiveKit + SIP + LLM | **Inbound + outbound** calls, voicemail & dropped-call recovery | Cloud / Docker |
+| **ECG LSTM on FPGA** | Real-time ECG Monitoring | Domain-specific LSTM (HLS) | **Hardware-software co-design** on FPGA (PL + PS) | FPGA (Programmable Logic + Processing System) |
 | **RAG PDF Chatbot** | Document QA | all-MiniLM + Mistral 7B | **~1.1s** retrieval + synth | CPU (Vector DB on disk) |
 | **Urdu Voice Assistant** | Multi-hop Speech Pipeline | Google STT + Mistral 7B | **Zero Crash** audio fallback | CPU + Standard Mic |
 | **YOLOv8 Detection** | Custom Face Detection | YOLOv8n (Custom Weights) | **42+ FPS** @ 640×640 | CPU or CUDA GPU |
